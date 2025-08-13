@@ -1,0 +1,249 @@
+[
+        {
+                "testtype": "Manual",
+                "fields": {
+                        "summary": "IPA-986 | Mobilkassa-Renamed",
+                        "project": {
+                                "key": "IPA"
+                        }
+                },
+                "steps": [
+                        {
+                                "action": "Logga in i MB",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Byt/stanna kvar i rätt butik",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Logga in i Mobil kassa",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande Kanelbullar 7318690083245 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande POSK103 Gåva Kanelbullar 9917021900596 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande Tapenade 7350002401101 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande Tapenade 7350002401101 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande Tapenade 7350002401101 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande POSK29 - köp 3 få 1 9917088123457 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande  9910000000003 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande  9910000000010 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande POSK101Planerat 9910000000027 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande  9910100807502 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande  9910100007698 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in erbjudande  9917034124576 med kupong",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Betala kontant (0 kr). Inget kvitto",
+                                "data": "",
+                                "result": "OK"
+                        }
+                ]
+        },
+        {
+                "testtype": "Manual",
+                "fields": {
+                        "summary": "IPA-984 | Mobilkassa-Artiklar",
+                        "project": {
+                                "key": "IPA"
+                        }
+                },
+                "steps": [
+                        {
+                                "action": "Logga in i MB",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Byt/stanna kvar i rätt butik",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Logga in i Mobil kassa",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Shoppingkasse 1003",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Tomatketchup 87157239",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Coca cola 50cl 73513513",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel DelM Gold Ananas 024000193852",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Polly Blå 7310040034525",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Godis Polly röd 7310040034532",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Energy Drink 9002490215422",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Nya TrissX 73112181",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Pripps Blå 7310072766050",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel OutsidernZ 9789100177164",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Blå blendZ 73152149",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Kortspel UnoX 746775036744",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Color Sens StickX 3600530559329",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Hushållsost 26%Z 2340375405009",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Hushållsostx 26% 2340375300007",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel HummerStyck 2100103025806",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Äpple Granny STS 2092321015274",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Gul lök STS 2092466603008",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Gurka20kodspärrX 2098459314906",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel SalladsbarenZ 2092801159788",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel value brygg 500g 7318690027751",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Snickersy50gZ 5000159461122",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Kexchoklad jätteZ 7310040027503",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Aftonbladet 7388119901504",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Mata in artikel Löparbibeln 7388132802253",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Betala kontant. Inget kvitto",
+                                "data": "",
+                                "result": "OK"
+                        }
+                ]
+        }
+]

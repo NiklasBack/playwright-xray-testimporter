@@ -1,0 +1,46 @@
+[
+  {
+    "addedSteps": [
+    ],
+    "deletedSteps": [
+      {
+        "stepId": "3fc3e18d-1ae7-4810-abb7-50b5cdd48365"
+      }
+    ],
+    "modifiedSteps": [
+      {
+        "stepId": "4a36df2f-ce27-4ef1-bb43-c7b78025d59f",
+        "action": "Goto get started"
+      },
+      {
+        "stepId": "a2cd6443-d967-456e-8980-7db35321c6c7",
+        "action": "Verify heading"
+      }
+    ],
+    "issueId": "531012",
+    "testCaseName": "",
+    "tesKaseKey": "TES-588"
+  },
+  {
+    "addedSteps": [
+    ],
+    "deletedSteps": [
+      {
+        "stepId": "275d18f4-a573-4839-a3d8-07d458b35bde"
+      }
+    ],
+    "modifiedSteps": [
+      {
+        "stepId": "c1c8a8ea-d7a7-4993-a59d-75ea874de04e",
+        "action": "Verify site"
+      },
+      {
+        "stepId": "bbf472cc-3d2b-44d3-a0c5-77e3415ae9eb",
+        "action": "Verify header"
+      }
+    ],
+    "issueId": "531011",
+    "testCaseName": "",
+    "tesKaseKey": "TES-587"
+  }
+]

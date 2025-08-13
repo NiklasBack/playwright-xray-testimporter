@@ -1,0 +1,22 @@
+{
+    "jira": {
+        "url": "https://x.atlassian.net",
+        "type": "cloud",
+        "apiVersion": "1.0",
+        "jiraUserName": "someone@x.com",
+        "jiraAccesToken": ""
+    },
+    "cloud": {
+        "client_id": "",
+        "client_secret": ""
+    },
+    "projectKey": "TES",
+    "xray_test_repository_folder": "",
+    "test_input_folder": "./test/testReader/importFiles/multipleTcPerFile",
+    "test_output_folder": "./test/exportFiles",
+    "customField": {
+        "customfield_11548": {
+            "Value": "JUMP"
+        }
+    }
+}

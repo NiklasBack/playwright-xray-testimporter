@@ -1,0 +1,16 @@
+[
+  {
+    "addedSteps": [
+      {
+        "action": "Added test step"
+      }
+    ],
+    "deletedSteps": [
+    ],
+    "modifiedSteps": [
+    ],
+    "issueId": "531012",
+    "testCaseName": "",
+    "tesKaseKey": "TES-588"
+  }
+]

@@ -1,0 +1,86 @@
+{
+    "localData": [
+        {
+            "testType": "Manual",
+            "fields": {
+                "summary": "TES-588 | get started link",
+                "project": {
+                    "key": "TES"
+                }
+            },
+            "steps": []
+        },
+        {
+            "testType": "Manual",
+            "fields": {
+                "summary": "TES-587 | has title",
+                "project": {
+                    "key": "TES"
+                }
+            },
+            "steps": [
+                {
+                    "action": "Goto to site",
+                    "data": "",
+                    "result": "OK"
+                },
+                {
+                    "action": "Verify site",
+                    "data": "",
+                    "result": "OK"
+                },
+                {
+                    "action": "Verify header",
+                    "data": "",
+                    "result": "OK"
+                }
+            ]
+        }
+    ],
+    "remoteData": {
+        "results": [
+            {
+                "issueId": "531012",
+                "steps": [
+                    {
+                        "id": "4a36df2f-ce27-4ef1-bb43-c7b78025d59f",
+                        "action": "Goto site"
+                    },
+                    {
+                        "id": "a2cd6443-d967-456e-8980-7db35321c6c7",
+                        "action": "Goto get started"
+                    },
+                    {
+                        "id": "3fc3e18d-1ae7-4810-abb7-50b5cdd48365",
+                        "action": "Verify heading"
+                    }
+                ],
+                "jira": {
+                    "key": "TES-588",
+                    "summary": "get started link"
+                }
+            },
+            {
+                "issueId": "531011",
+                "steps": [
+                    {
+                        "id": "c1c8a8ea-d7a7-4993-a59d-75ea874de04e",
+                        "action": "Goto to site"
+                    },
+                    {
+                        "id": "bbf472cc-3d2b-44d3-a0c5-77e3415ae9eb",
+                        "action": "Verify site"
+                    },
+                    {
+                        "id": "275d18f4-a573-4839-a3d8-07d458b35bde",
+                        "action": "Verify header"
+                    }
+                ],
+                "jira": {
+                    "key": "TES-587",
+                    "summary": "has title"
+                }
+            }
+        ]
+    }
+}

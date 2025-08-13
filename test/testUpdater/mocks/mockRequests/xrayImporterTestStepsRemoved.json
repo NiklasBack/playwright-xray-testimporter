@@ -1,0 +1,49 @@
+[
+        {
+                "testtype": "Manual",
+                "fields": {
+                        "summary": "TES-588 | get started link",
+                        "project": {
+                                "key": "TES"
+                        }
+                },
+                "steps": [
+                        {
+                                "action": "Goto site",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Goto get started",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Verify heading",
+                                "data": "",
+                                "result": "OK"
+                        }
+                ]
+        },
+        {
+                "testtype": "Manual",
+                "fields": {
+                        "summary": "TES-587 | has title",
+                        "project": {
+                                "key": "TES"
+                        }
+                },
+                "steps": [
+                        {
+                                "action": "Goto to site",
+                                "data": "",
+                                "result": "OK"
+                        },
+                        {
+                                "action": "Verify header",
+                                "data": "",
+                                "result": "OK"
+                        }
+                ]
+        }
+]

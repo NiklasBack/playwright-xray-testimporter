@@ -1,0 +1,48 @@
+[
+  {
+    "addedSteps": [
+      {
+        "action": "Added test step 2"
+      },
+      {
+        "action": "Verify heading"
+      }
+    ],
+    "deletedSteps": [
+    ],
+    "modifiedSteps": [
+      {
+        "stepId": "3fc3e18d-1ae7-4810-abb7-50b5cdd48365",
+        "action": "Added test step 1"
+      }
+    ],
+    "issueId": "531012",
+    "testCaseName": "",
+    "tesKaseKey": "TES-588"
+  },
+  {
+    "addedSteps": [
+      {
+        "action": "Verify site"
+      },
+      {
+        "action": "Verify header"
+      }
+    ],
+    "deletedSteps": [
+    ],
+    "modifiedSteps": [
+      {
+        "stepId": "bbf472cc-3d2b-44d3-a0c5-77e3415ae9eb",
+        "action": "Added test step 1"
+      },
+      {
+        "stepId": "275d18f4-a573-4839-a3d8-07d458b35bde",
+        "action": "Added test step 2"
+      }
+    ],
+    "issueId": "531011",
+    "testCaseName": "",
+    "tesKaseKey": "TES-587"
+  }
+]

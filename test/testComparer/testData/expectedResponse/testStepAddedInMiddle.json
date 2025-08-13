@@ -1,0 +1,23 @@
+[
+  {
+    "addedSteps": [
+      {
+        "action": "Added test step 2"
+      },
+      {
+        "action": "Verify heading"
+      }
+    ],
+    "deletedSteps": [
+    ],
+    "modifiedSteps": [
+      {
+        "stepId": "3fc3e18d-1ae7-4810-abb7-50b5cdd48365",
+        "action": "Added test step 1"
+      }
+    ],
+    "issueId": "531012",
+    "testCaseName": "",
+    "tesKaseKey": "TES-588"
+  }
+]

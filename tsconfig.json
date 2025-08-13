@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnusedLabels": true,
+    "allowUnreachableCode": true,
+    "skipLibCheck": true,
+    "outDir": "./lib",
+    "declaration": true,
+    "moduleResolution":"Node"
+  },
+  "files": [
+    "./src/testimporter.ts",
+    "./src/playwrightTestReader.ts",
+    "./src/playwrightTestUpdater.ts",
+    "./src/xray.service.ts",
+    "./src/types/xrayTypes.ts",
+    "./src/index.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "lib/**/*.ts"
+  ],
+}

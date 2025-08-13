@@ -1,0 +1,206 @@
+{
+    "data": {
+        "getTests": {
+            "results": [
+                {
+                    "issueId": "473620",
+                    "steps": [
+                        {
+                            "id": "bafaf1f2-23ec-46c3-8c7e-b2f820de38bf",
+                            "action": "Logga in i MB"
+                        },
+                        {
+                            "id": "10d175c9-7956-4464-847a-91bc07397601",
+                            "action": "Byt/stanna kvar i rätt butik"
+                        },
+                        {
+                            "id": "e7610b85-af30-4e64-b138-53da23401d59",
+                            "action": "Logga in i Mobil kassa"
+                        },
+                        {
+                            "id": "245fa58c-eb17-44da-874e-90b5e18d688b",
+                            "action": "Mata in erbjudande Kanelbullar 7318690083245 med kupong"
+                        },
+                        {
+                            "id": "3fb029a4-5888-4bd9-bd55-71dd8f65846b",
+                            "action": "Mata in erbjudande POSK103 Gåva Kanelbullar 9917021900596 med kupong"
+                        },
+                        {
+                            "id": "251adc9b-839d-4c08-a020-5029f2330665",
+                            "action": "Mata in erbjudande Tapenade 7350002401101 med kupong"
+                        },
+                        {
+                            "id": "c87e5a2d-c394-4c27-96c8-86900bd3fa30",
+                            "action": "Mata in erbjudande Tapenade 7350002401101 med kupong"
+                        },
+                        {
+                            "id": "f6f3ff59-1856-4653-8028-a6e8080857c4",
+                            "action": "Mata in erbjudande Tapenade 7350002401101 med kupong"
+                        },
+                        {
+                            "id": "01593ea5-4207-417c-9744-0968031d60d0",
+                            "action": "Mata in erbjudande POSK29 - köp 3 få 1 9917088123457 med kupong"
+                        },
+                        {
+                            "id": "c6097b55-bb5f-43c7-9815-b180e58a2402",
+                            "action": "Mata in erbjudande  9910000000003 med kupong"
+                        },
+                        {
+                            "id": "f21bb963-4abb-4cbb-ac34-ad4b5f7212bc",
+                            "action": "Mata in erbjudande  9910000000010 med kupong"
+                        },
+                        {
+                            "id": "892996e4-a45d-413f-90f3-570e435a19e6",
+                            "action": "Mata in erbjudande POSK101Planerat 9910000000027 med kupong"
+                        },
+                        {
+                            "id": "15a0b8b2-6986-4065-b3de-6e2811f5afce",
+                            "action": "Mata in erbjudande  9910100807502 med kupong"
+                        },
+                        {
+                            "id": "be3c5b2b-a272-4bb5-b99c-ef406c3a776f",
+                            "action": "Mata in erbjudande  9910100007698 med kupong"
+                        },
+                        {
+                            "id": "4a0b66aa-1ef2-4636-ae11-056c36a7c9f9",
+                            "action": "Mata in erbjudande  9917034124576 med kupong"
+                        },
+                        {
+                            "id": "dbab6f15-fc1c-4e12-9412-5f240ca26804",
+                            "action": "Betala kontant (0 kr). Inget kvitto"
+                        }
+                    ],
+                    "jira": {
+                        "key": "IPA-986",
+                        "summary": "Mobilkassa-ErbjudandenMedSOKuponger"
+                    }
+                },
+                {
+                    "issueId": "473618",
+                    "steps": [
+                        {
+                            "id": "cf4ed58f-09ae-4d8b-b9f0-7c09003667d9",
+                            "action": "Logga in i MB"
+                        },
+                        {
+                            "id": "b6eaaf82-d13a-41c5-b7e4-49ed45c9e234",
+                            "action": "Byt/stanna kvar i rätt butik"
+                        },
+                        {
+                            "id": "c6e06aa1-7440-4aaf-82a7-46058f218643",
+                            "action": "Logga in i Mobil kassa"
+                        },
+                        {
+                            "id": "8834d875-c29c-4b36-ac15-c8547b0735af",
+                            "action": "Mata in artikel Shoppingkasse 1003"
+                        },
+                        {
+                            "id": "cf345827-cf52-4b47-b941-7f1df91933b2",
+                            "action": "Mata in artikel Tomatketchup 87157239"
+                        },
+                        {
+                            "id": "2e87eb69-4675-4dbb-ab1a-794df905302d",
+                            "action": "Mata in artikel Coca cola 50cl 73513513"
+                        },
+                        {
+                            "id": "a50e02ce-8252-48f1-ab37-2ce1675a6e0d",
+                            "action": "Mata in artikel DelM Gold Ananas 024000193852"
+                        },
+                        {
+                            "id": "d422593b-b139-441d-b9b4-6bc9fe458e5f",
+                            "action": "Mata in artikel Polly Blå 7310040034525"
+                        },
+                        {
+                            "id": "e3f3546c-c2e1-442f-a976-f05685a0a815",
+                            "action": "Mata in artikel Godis Polly röd 7310040034532"
+                        },
+                        {
+                            "id": "1cf8c739-f220-441e-a879-64cd4badebf8",
+                            "action": "Mata in artikel Energy Drink 9002490215422"
+                        },
+                        {
+                            "id": "b38c948b-771e-492e-b3f9-6007f7daa57a",
+                            "action": "Mata in artikel Nya TrissX 73112181"
+                        },
+                        {
+                            "id": "00db3586-7097-4d76-b0c1-ad0da2ea9e69",
+                            "action": "Mata in artikel Pripps Blå 7310072766050"
+                        },
+                        {
+                            "id": "7cac9cd3-d431-4b19-9508-d84623635b98",
+                            "action": "Mata in artikel OutsidernZ 9789100177164"
+                        },
+                        {
+                            "id": "bb185091-d7bb-48c7-a77e-c507f34a942d",
+                            "action": "Mata in artikel Blå blendZ 73152149"
+                        },
+                        {
+                            "id": "27dac3cc-5c94-4289-a253-ee801e24cf42",
+                            "action": "Mata in artikel Kortspel UnoX 746775036744"
+                        },
+                        {
+                            "id": "bbebbec0-31f5-42b0-bf09-def3ed8d345a",
+                            "action": "Mata in artikel Color Sens StickX 3600530559329"
+                        },
+                        {
+                            "id": "6631d335-28d5-4e05-8829-9e8749afa16b",
+                            "action": "Mata in artikel Hushållsost 26%Z 2340375405009"
+                        },
+                        {
+                            "id": "ba80e1d2-e8c6-481c-8ae9-c74c7e63d000",
+                            "action": "Mata in artikel Hushållsostx 26% 2340375300007"
+                        },
+                        {
+                            "id": "ea4303d5-f574-4260-a960-09f6ae160176",
+                            "action": "Mata in artikel HummerStyck 2100103025806"
+                        },
+                        {
+                            "id": "812307bc-ed15-45c2-af16-42b525cb521c",
+                            "action": "Mata in artikel Äpple Granny STS 2092321015274"
+                        },
+                        {
+                            "id": "7a7e0b90-4a57-4e71-8ce9-eda18e265788",
+                            "action": "Mata in artikel Gul lök STS 2092466603008"
+                        },
+                        {
+                            "id": "bb3c1653-9bf9-41b8-9ffb-2caea128da45",
+                            "action": "Mata in artikel Gurka20kodspärrX 2098459314906"
+                        },
+                        {
+                            "id": "6959cf70-18f8-4837-903b-919bc28f98a3",
+                            "action": "Mata in artikel SalladsbarenZ 2092801159788"
+                        },
+                        {
+                            "id": "fdacfe16-393c-4a0d-82c1-d4192d895d2e",
+                            "action": "Mata in artikel value brygg 500g 7318690027751"
+                        },
+                        {
+                            "id": "11e1b92b-b307-40c5-8f1b-180f90bb5637",
+                            "action": "Mata in artikel Snickersy50gZ 5000159461122"
+                        },
+                        {
+                            "id": "2de3dfaa-d924-4235-bae7-946ef812ae20",
+                            "action": "Mata in artikel Kexchoklad jätteZ 7310040027503"
+                        },
+                        {
+                            "id": "792629a8-0223-4c58-8a85-088e4a3ebb74",
+                            "action": "Mata in artikel Aftonbladet 7388119901504"
+                        },
+                        {
+                            "id": "3bd0cfcc-706a-4181-8fa8-b2de76df13a3",
+                            "action": "Mata in artikel Löparbibeln 7388132802253"
+                        },
+                        {
+                            "id": "1c2a9b9d-a7f7-49aa-a137-2b285594bdb6",
+                            "action": "Betala kontant. Inget kvitto"
+                        }
+                    ],
+                    "jira": {
+                        "key": "IPA-984",
+                        "summary": "Mobilkassa-Artiklar"
+                    }
+                }
+            ]
+        }
+    }
+}

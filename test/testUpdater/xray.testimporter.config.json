@@ -1,0 +1,23 @@
+{
+    "jira": {
+        "url": "https://x.atlassian.net",
+        "type": "cloud",
+        "apiVersion": "1.0",
+        "jiraUserName": "niklas.back@x.se",
+        "jiraAccesToken": "Put your jira access token here"
+    },
+    "cloud": {
+        "client_id": "put your xray client id here",
+        "client_secret": "put your xray client secret here",
+        "xrayUrl": "https://xray.cloud.getxray.app"
+    },
+    "projectKey": "TES",
+    "xray_test_repository_folder": "",
+    "test_input_folder": "./test/importFiles",
+    "test_output_folder": "./test/exportFiles",
+    "customField": {
+        "customfield_11548": {
+            "Value": "JUMP"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "client_id": "",
+    "projectKey": "TES",
+    "xray_test_repository_folder": "",
+    "test_input_folder": "./test/test_files_read",
+    "test_output_folder": "./test/test_files_write"
+}

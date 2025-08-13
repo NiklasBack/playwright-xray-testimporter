@@ -1,0 +1,7 @@
+**/test
+jest.config.js
+xray.testconfig.json
+testImport.csv
+xrayJson.json
+*.tgz
+**/src

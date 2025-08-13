@@ -1,0 +1,20 @@
+[
+  {
+    "addedSteps": [],
+    "deletedSteps": [
+      {
+        "stepId": "4a36df2f-ce27-4ef1-bb43-c7b78025d59f"
+      },
+      {
+        "stepId": "a2cd6443-d967-456e-8980-7db35321c6c7"
+      },
+      {
+        "stepId": "3fc3e18d-1ae7-4810-abb7-50b5cdd48365"
+      }
+    ],
+    "modifiedSteps": [],
+    "issueId": "531012",
+    "testCaseName": "",
+    "tesKaseKey": "TES-588"
+  }
+]
