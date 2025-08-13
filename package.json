@@ -1,20 +1,34 @@
 {
-  "name": "@ica/playwright-xray-testimporter",
+  "name": "playwright-xray-testimporter",
   "main": "lib/index.js",
   "types": "lib/testimporter.d.ts",
-  "version": "0.0.16",
+  "version": "0.0.1",
   "description": "Utility to extract test steps from Playwright and import them into Xray",
   "private": true,
   "scripts": {
+   "prepare": "npm run build",
+    "version": "npm run format",
     "build": "tsc && npm run add-js",
+    "release": "release-it --github.release",
+    "release:ci": "npm run release -- --ci --npm.skipChecks --no-git.requireCleanWorkingDir",
+    "release:patch": "npm run release -- patch",
+    "release:minor": "npm run release -- minor",
+    "release:major": "npm run release -- major",
     "add-js": "ts-add-js-extension --dir=lib",
     "test": "jest"
   },
-  "author": "niklas-back@ica.se",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiklasBack/playwright-xray-testimporter.git"
+  },
+  "author": "Niklas Back <niklas.back@gmail.com>",
+  "license": "MIT",
   "bin": {
     "xraytestimporter": "./lib/index.js"
+  },"bugs": {
+    "url": "https://github.com/NiklasBack/playwright-xray-testimporter/issues"
   },
+  "homepage": "https://github.com/NiklasBack/playwright-xray-testimporter#readme",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",
