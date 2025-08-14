@@ -18,8 +18,8 @@ Please delete options that are not relevant.
 Please describe the tests that you ran apart from biome to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
 
 - [ ] npx biome check
+- [ ] npm run test
 - [ ] ....
-
 
 # Checklist:
 
