@@ -1,12 +1,12 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": true,
     "defaultBranch": "main"
   },
-  "files": { "ignoreUnknown": false, "includes": ["src/**", "test/**", "!**/test/**/*.json", "!**/test_files*/**", "!**/*Files/**"] },
+  "files": { "ignoreUnknown": false, "includes": ["src/**", "test/**", "!**/test/**/*.json", "!**/test_files*", "!**/*Files"] },
   "formatter": {
     "enabled": true,
     "useEditorconfig": true,
