@@ -15,6 +15,7 @@
     "release:minor": "npm run release -- minor",
     "release:major": "npm run release -- major",
     "add-js": "ts-add-js-extension --dir=lib",
+    "format": "npx biome format --write",
     "test": "jest"
   },
   "repository": {
@@ -36,10 +37,10 @@
     "@types/node": "^20.11.30",
     "jest": "^29.7.0",
     "msw": "^2.10.2",
+    "release-it": "^19.0.4",
     "ts-add-js-extension": "^1.6.0",
     "ts-jest": "^29.1.2",
-    "typescript": "^5.4.3",
-    "release-it": "^19.0.4"
+    "typescript": "^5.4.3"
   },
   "directories": {
     "lib": "lib"
