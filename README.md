@@ -91,3 +91,16 @@ A string field would look like this
     "customfield_11548": "JUMP"
 }
 ```
+
+## License
+
+playwright-xray-testimporter is [MIT licensed](./LICENSE).
+
+## Acknowledgments
+
+* [ICA Sverige](www.ica.se)
+
+
+## Author
+
+Niklas Back <niklas.back@gmail.com>
