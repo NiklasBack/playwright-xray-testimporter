@@ -96,9 +96,12 @@ A string field would look like this
 
 playwright-xray-testimporter is [MIT licensed](./LICENSE).
 
+## Contributors (special thanks for supporting the project), in alphabetical order:
+- [sureshbalajiica](https://github.com/sureshbalajiica)
+
 ## Acknowledgments
 
-* [ICA Sverige](www.ica.se)
+* [ICA Sverige](https://www.ica.se)
 
 
 ## Author
