@@ -2,6 +2,9 @@
 
 Imports and updates Playwright test cases to Xray
 
+
+**Please note that this is a 0.0.x release, so ther will probably be some bugs**
+
 ## Install
 Install the latest version with
 ```sh
