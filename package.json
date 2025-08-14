@@ -2,7 +2,7 @@
   "name": "playwright-xray-testimporter",
   "main": "lib/index.js",
   "types": "lib/testimporter.d.ts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utility to extract test steps from Playwright and import them into Xray",
   "private": false,
   "scripts": {
