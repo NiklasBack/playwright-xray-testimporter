@@ -64,7 +64,8 @@ export default class PlayWrightTestReader {
   }
 
   private checkIfDuplicate() {
-    this.xrayTestCases.forEach((tc, idx, arr) =>
+    this.xrayTestCases.forEach((tc, idx, arr) => {
+      // biome-ignore lint/suspicious/useIterableCallbackReturn: Ignore the return
       arr.find((trc, idx2) => {
         if (this.mode === Mode.update) {
           const tcTest = tc.fields.summary.match(/([\w-]+)/)?.[1];
@@ -77,8 +78,8 @@ export default class PlayWrightTestReader {
           console.error(`Found duplicate test case "${tc.fields.summary}" - aborting.`);
           process.exit(-1);
         }
-      }),
-    );
+      });
+    });
   }
 
   private alreadyImportedTestCase(previouslyImported: RegExpMatchArray | null, skip: boolean, tcFileName: string) {

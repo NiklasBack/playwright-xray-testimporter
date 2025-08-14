@@ -31,14 +31,14 @@ test('Verify config file - Missing projectKey', async () => {
 test('Verify config file - Missing Xray client configutation Id', async () => {
   const { mockExit, logSpy } = setUpMock('./test/testImporter/configFiles/missingClientConfigId.json');
   expect(mockExit).toHaveBeenCalledWith(-1);
-  expect(logSpy).toHaveBeenCalledWith('Missing Xray client configutation, got {{\"client_secret\":\"\"}}.');
+  expect(logSpy).toHaveBeenCalledWith('Missing Xray client configutation, got {{"client_secret":""}}.');
   resetMocks(mockExit, logSpy);
 }, 200000);
 
 test('Verify config file - Missing Xray client configutation Secret', async () => {
   const { mockExit, logSpy } = setUpMock('./test/testImporter/configFiles/missingClientConfigSecret.json');
   expect(mockExit).toHaveBeenCalledWith(-1);
-  expect(logSpy).toHaveBeenCalledWith('Missing Xray client configutation, got {{\"client_id\":\"\"}}.');
+  expect(logSpy).toHaveBeenCalledWith('Missing Xray client configutation, got {{"client_id":""}}.');
   resetMocks(mockExit, logSpy);
 }, 200000);
 
