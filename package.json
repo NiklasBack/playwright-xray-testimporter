@@ -2,9 +2,10 @@
   "name": "playwright-xray-testimporter",
   "main": "lib/index.js",
   "types": "lib/testimporter.d.ts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Utility to extract test steps from Playwright and import them into Xray",
   "private": false,
+  "type": "module",
   "scripts": {
     "prepare": "npm run build",
     "version": "npm run format",
@@ -25,7 +26,7 @@
   "author": "Niklas Back <niklas.back@gmail.com>",
   "license": "MIT",
   "bin": {
-    "xraytestimporter": "./lib/index.js"
+    "xraytestimporter": "lib/index.js"
   },
   "bugs": {
     "url": "https://github.com/NiklasBack/playwright-xray-testimporter/issues"
