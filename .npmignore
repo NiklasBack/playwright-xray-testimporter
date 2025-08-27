@@ -5,3 +5,10 @@ testImport.csv
 xrayJson.json
 *.tgz
 **/src
+.github/**/*
+batchrequests.log
+biome.json
+jest.config.cjs
+*.bat
+tcbackup.json
+tsconfig.json
