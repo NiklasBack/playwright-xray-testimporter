@@ -30,7 +30,7 @@ export default class PlayWrightTestReader {
       const lines = tc.split(/\r?\n/);
 
       for (const line in lines) {
-        const testStepFound = lines[line].trimStart().match(/^await test\.step\('(.*)'/);
+        const testStepFound = lines[line].trimStart().match(/^await test\.step\(('|")(.*)('|")/);
         const previouslyImported = lines[line].match(/^(.+?) \| /);
 
         skip = this.alreadyImportedTestCase(previouslyImported, skip, tcFileName);
@@ -42,7 +42,7 @@ export default class PlayWrightTestReader {
           processed = true;
           tcFileName = '';
           const step: XrayStep = {
-            action: testStepFound[1],
+            action: testStepFound[2],
             result: '',
           };
           testCase.steps.push(step);
