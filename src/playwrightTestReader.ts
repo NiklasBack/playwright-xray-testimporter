@@ -8,10 +8,17 @@ export enum Mode {
   update,
 }
 
+enum parsingStates {
+  proccesed,
+  new,
+  parsing,
+}
+
 export default class PlayWrightTestReader {
   private xrayTestCases: XrayTestCase[] = [];
   config = {} as ClientConfiguration;
   private mode: Mode;
+  private parsingState = parsingStates.parsing;
 
   constructor(mode: Mode) {
     this.mode = mode;
@@ -19,30 +26,25 @@ export default class PlayWrightTestReader {
 
   async parseFiles(config: ClientConfiguration) {
     this.config = config;
-    let skip = false;
     let processed = false;
 
     const files: string[] = await this.getFiles();
     let testCase = new XRayTest();
     for (const file in files) {
-      let tcFileName = files[file].replace('.spec.ts', '');
+      //let tcFileName = files[file].replace('.spec.ts', '');
       const tc = readFileSync(`${config.test_input_folder}/${files[file]}`, 'utf-8');
       const lines = tc.split(/\r?\n/);
 
       for (const line in lines) {
-        const testStepFound = lines[line].trimStart().match(/^await test\.step\(('|")(.*)('|")/);
-        const previouslyImported = lines[line].match(/^(.+?) \| /);
-
-        skip = this.alreadyImportedTestCase(previouslyImported, skip, tcFileName);
-        if (skip && this.mode === Mode.import) break;
-
+        const testStepFound = lines[line].trimStart().match(/^(await test|test)\.step\(('|")(.*)('|")/);
+        this.setParsingState(lines[line]);
+        if (this.parsingState === parsingStates.proccesed && this.mode === Mode.import) continue;
         testCase = this.checkIfNewTestCase(lines, line, testCase);
 
-        if (testStepFound != null && (!skip || this.mode === Mode.update)) {
+        if (testStepFound != null && (this.parsingState === parsingStates.new || this.mode === Mode.update)) {
           processed = true;
-          tcFileName = '';
           const step: XrayStep = {
-            action: testStepFound[2],
+            action: testStepFound[3],
             result: '',
           };
           testCase.steps.push(step);
@@ -52,7 +54,6 @@ export default class PlayWrightTestReader {
       if (processed) {
         processed = false;
       }
-      skip = false;
     }
 
     if (testCase.fields !== undefined) this.xrayTestCases.push(testCase);
@@ -82,16 +83,20 @@ export default class PlayWrightTestReader {
     });
   }
 
-  private alreadyImportedTestCase(previouslyImported: RegExpMatchArray | null, skip: boolean, tcFileName: string) {
-    if (previouslyImported != null) {
-      skip = true;
-      console.log(`Skipping ${tcFileName}`);
+  private setParsingState(lineToCheck: string) {
+    const line = lineToCheck.trimStart();
+    if (line.match(/^(.+?) \| /) != null) {
+      this.parsingState = parsingStates.proccesed;
+      return;
     }
-    return skip;
+
+    if (lineToCheck.match(/^test(.+?)/) != null) {
+      this.parsingState = parsingStates.new;
+    }
   }
 
   private checkIfNewTestCase(lines: string[], line: string, testCase: XrayTestCase) {
-    const l = lines[+line].match(/^\s*test\('(.*)'/);
+    const l = lines[+line].match(/^\s*test\(('|")(.*)('|")/);
     if (testCase.fields !== undefined && l !== null) {
       this.xrayTestCases.push(testCase);
       testCase = new XRayTest();
@@ -101,7 +106,7 @@ export default class PlayWrightTestReader {
       testCase.testtype = 'Manual';
       if (this.config.customField !== undefined) {
         testCase.fields = structuredClone(this.config.customField);
-        testCase.fields.summary = l[1];
+        testCase.fields.summary = l[2];
         testCase.fields.project = { key: this.config.projectKey };
       } else testCase.fields = { summary: l[1], project: { key: this.config.projectKey } };
       if (this.config.xray_test_repository_folder !== undefined)
@@ -114,6 +119,7 @@ export default class PlayWrightTestReader {
 
   async getFiles() {
     let files: string[] = [];
+    const testFiles: string[] = [];
     try {
       files = await readdir(this.config.test_input_folder);
     } catch (error) {
@@ -122,12 +128,15 @@ export default class PlayWrightTestReader {
     }
     try {
       for (const file in files) {
-        console.log(`Found ${files[file]}`);
+        if (files[file].endsWith('.spec.ts')) {
+          testFiles.push(files[file]);
+          console.log(`Found ${files[file]}`);
+        }
       }
     } catch (error) {
       console.error(`Something went wrong reading files "${(error as Error).message}" - aborting.`);
       process.exit(-1);
     }
-    return files;
+    return testFiles;
   }
 }
